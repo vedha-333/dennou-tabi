@@ -1,71 +1,201 @@
-# Vedant Yadav Pandilwad – Japanese Interactive Storytelling Portfolio
+<div align="center">
 
-## Overview
-A cinematic, scroll‑driven personal portfolio that blends Japanese watercolor illustrations with modern web technologies.  
-The experience unfolds across **six beautifully painted scenes** that tell the story of Vedant’s journey, skills, projects, and philosophy.
+# 電 脳 の 旅 &bull; Dennou-Tabi
+### *An Interactive Japanese Watercolor Storytelling Portfolio*
 
-| Scene | Image | Theme | Heading |
-|------|-------|-------|---------|
-| 01 | `Images/1.png` | `#B84C3D` (vermilion) | *Hello, I'm Vedant.* |
-| 02 | `Images/2.png` | `#D9A66E` (amber) | *Beyond the Horizon.* |
-| 03 | `Images/3.png` | `#718A8A` (water) | *Tools of Creation.* |
-| 04 | `Images/4.png` | `#B84C3D` (vermilion) | *Things I've Built.* |
-| 05 | `Images/5.png` | `#4B5047` (ink) | *Always Becoming.* |
-| 06 | `Images/6.png` | `#B84C3D` (vermilion) | *Until Our Paths Cross Again.* |
+[![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.12-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/)
+[![Lenis](https://img.shields.io/badge/Lenis-Smooth_Scroll-orange?style=for-the-badge)](https://lenis.darkroom.engineering/)
 
-The site uses **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **GSAP** for scroll‑triggered animations, **Lenis** for smooth scrolling, and **Lucide‑React** for icons.  All typography is loaded via Google Fonts with a fallback to locally‑defined CSS variables.
+<br />
 
-## Getting Started
-```bash
-# Clone (or place this folder) and install dependencies
-npm install
+> *「千里の行も足下に始まる」*  
+> *"A journey of a thousand miles begins with a single step."*
 
-# Development server (hot‑reload)
-npm run dev
-```
-Open `http://localhost:3000` in a browser.  The site works on desktop, tablet and mobile; on touch devices the custom cursor is disabled and animation density is reduced.
+[Explore Passages](#-the-six-passages) &bull; [Key Highlights](#-key-engineering-highlights) &bull; [Tech Stack](#-tech-stack) &bull; [Project Structure](#-project-structure) &bull; [Local Setup](#-getting-started) &bull; [Author](#-author--connect)
 
-## Build & Deploy
-```bash
-# Production build
-npm run build
-
-# Preview the built app locally
-npm start
-```
-The build outputs to `.next/`.  Deploy to **Vercel** (or any Node host) by connecting the repository and selecting the default *Next.js* preset.  No extra environment variables are required.
-
-## Project Structure
-```
-public/
-  images/scenes/      ← copied watercolor assets (1‑6.png)
-src/
-  app/               ← Next.js app router (layout.tsx, page.tsx, globals.css)
-  components/
-    layout/          ← Navigation, PageIndicator
-    scenes/          ← SceneManager, ChapterContent
-    effects/         ← CustomCursor, Droplets, FloatingLeaves, ParallaxArtwork, WaterDistortion
-    graphics/        ← JapaneseMotifs (HankoSeal, GithubIcon, EnsoCircle, SeigaihaPattern)
-  data/              ← portfolioData.ts, chapters.ts
-  hooks/             ← useLenis, useMousePosition
-  lib/               ← GSAP wrapper
-```
-
-## Key Features
-- **Diagonal Clip‑Path Scene Transitions** – GSAP timelines scrubbed to scroll progress.
-- **Custom Vermilion Cursor** – subtle lag and hover expansion, hidden on touch devices.
-- **Ambient Water Droplets & Sakura Petals** – continuous GSAP‑driven particles, density adapts to screen width.
-- **Mouse‑Responsive Parallax** – layered art moves subtly based on pointer position.
-- **Water Distortion Filter** – low‑overhead SVG turbulence for a watery ripple effect.
-- **Responsive Typography** – fluid scaling, `prefers‑reduced‑motion` disables all GSAP animations.
-- **Accessibility** – semantic headings, focus‑visible UI, ARIA labels on navigation.
-
-## Accessibility & Reduced Motion
-All GSAP animations check `window.matchMedia('(prefers-reduced-motion: reduce)')`.  When users prefer reduced motion, the site falls back to static content (no droplet, leaf, or scroll‑trigger animations).  The custom cursor is automatically disabled on mobile‑first devices.
-
-## Adding More Scenes (Future Work)
-The current repository contains six numbered watercolor illustrations (`1.png`–`6.png`).  If additional artwork becomes available, simply place the files in `public/images/scenes/` with the next numeric name, then add a new entry to `src/data/chapters.ts` mirroring the existing structure.  The `SceneManager` will automatically handle the new layer and transition.
+<br />
 
 ---
-*All content, images, and project links are taken directly from Vedant’s GitHub README.  No placeholder assets or invented achievements have been added.*
 
+</div>
+
+## 🌊 Overview
+
+**Dennou-Tabi (電脳の旅 — *Journey of the Mind*)** is a cinematic, scroll-driven interactive portfolio created for **Vedant Yadav Pandilwad**. Blending traditional Japanese watercolor art (*Washi* texture, Hanko seals, and ink-wash aesthetics) with cutting-edge web motion engineering, it transforms a conventional developer portfolio into an immersive, illustrated personal journey.
+
+Rather than a static grid of resume bullet points, the portfolio unfolds as a living scroll across **six narrative chapters**, where high-performance GSAP scroll mechanics, fluid momentum physics, and tactile 3D cards guide the reader through Vedant's work in software engineering, AI/ML, and computational systems.
+
+---
+
+## 📜 The Six Passages
+
+| Passage | Japanese Theme | Accent Color | Chapter Concept | Narrative & Focus |
+|:---:|:---|:---:|:---|:---|
+| **I** | **川の目覚め** *(The Awakening)* | `#B84C3D` <br> Vermilion | **The Source &bull; Before Sunrise** | Introduction, editorial biography, and Vedant's personal seal. |
+| **II** | **志の光** *(Light of Purpose)* | `#D9A66E` <br> Warm Amber | **The Horizon &bull; Silent Study** | Core philosophy, engineering curiosity, and areas of study. |
+| **III** | **技の竹林** *(Bamboo Grove)* | `#718A8A` <br> River Water | **The Grove &bull; Tools of Creation** | Technical skills categorized across AI/ML, Backend, Web, and Vision. |
+| **IV** | **創造の橋** *(Bridge of Creation)* | `#B84C3D` <br> Vermilion | **The Watermill &bull; Things I've Built** | Verified projects: Voice AI, Touchless Computer Vision, and Algorithms. |
+| **V** | **道の高み** *(The High Path)* | `#4B5047` <br> Deep Ink | **The Ascent &bull; Always Becoming** | The 4 core tenets: Craftsmanship, Rigor, Curiosity, and Balance. |
+| **VI** | **結びの夕** *(Evening Binding)* | `#B84C3D` <br> Vermilion | **Epilogue &bull; The Remembered Current** | Farewell passage, collaboration invitation, GitHub & LinkedIn links. |
+
+---
+
+## ✨ Key Engineering Highlights
+
+### 🏮 1. Washi Noren Opening Curtain
+Upon visiting, readers are welcomed by an authentic **Japanese Noren curtain prologue** on textured washi paper featuring the Hanko seal (`[ 源 ]`), a live progress counter (`00% → 100%`), and a 2.5-second auto-reveal timer (with instant click-to-skip). When complete, the curtains part horizontally to reveal the watercolor world.
+
+### 📜 2. Multiplane Parallax Artwork
+Six hand-painted watercolor scenes are rendered on a fixed background canvas. As you scroll, expanding water-ripple circle masks blossom organically, accompanied by subtle counter-parallax depth zoom and settling rotations.
+
+### 🧭 3. Asymmetric Pacing & Luxury Magnetic Snap
+- **Reading Shelves:** Each chapter utilizes a sticky stage that locks content stationary for the first 58% of the scroll journey, allowing effortless reading without scroll drift.
+- **Magnetic Snap:** Integrated GSAP ScrollTrigger snapping docks precisely to each section's exact scroll offset.
+- **Subpixel Text Clarity:** Exit transitions utilize clean transform translations without blur filters to preserve razor-sharp ClearType text rendering.
+
+### 🎴 4. Tactile 3D Cards (*Koi Studies Physics*)
+Reading panels are housed in custom tactile cards featuring:
+- Cursor-following light sheen and subtle 3D rotational tilt on desktop.
+- Hairline multi-stop gradient borders with glass refraction.
+- Automatic touch detection that stabilizes cards on mobile touch screens for jitter-free reading.
+
+### 📱 5. Adaptive Mobile & Tablet Architecture
+- **Desktop:** Elegant asymmetric layout (Passage I centered, odd passages on the left, even passages on the right).
+- **Tablet & Mobile:** Automatically centers reading cards with balanced margins, wraps headlines gracefully without word breaking, and provides safe internal scrollbars (`custom-scrollbar`) so content is never clipped on shorter viewports.
+- **Header:** Desktop displays all 6 interactive dot markers; mobile displays a compact passage pill with a full slide-down directory.
+
+### 🌸 6. Organic Micro-Interactions
+- **Liquid Custom Cursor:** Liquid lag physics with GSAP `quickTo`, expanding dynamically over interactive elements.
+- **Tumbling Sakura Leaves:** Ambient petals drift across the river current with organic sinusoidal wind sway.
+- **Water Ripple Click Effect:** Canvas ripples radiate on every button or navigation interaction.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router, Server Components & Static Site Generation)
+- **Language:** [TypeScript](https://www.typescriptlang.org/) (Strict type safety, zero `any` shortcuts)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) with customized Japanese parchment and mineral palettes
+- **Animation Engine:** [GSAP 3](https://greensock.com/gsap/) (`ScrollTrigger`, `quickTo`, timeline scrubbing)
+- **Kinetic Scrolling:** [@studio-freight/lenis](https://github.com/darkroomengineering/lenis) (Momentum smooth scroll)
+- **Icons:** [Lucide React](https://lucide.dev/) + Handcrafted SVG Japanese motifs
+- **Typography:** Cormorant Garamond, Libre Baskerville, DM Sans, and Noto Serif JP
+
+---
+
+## 📂 Project Structure
+
+```bash
+dennou-tabi/
+├── public/
+│   ├── favicon.svg             # Transparent vermilion Japanese "旅" favicon
+│   ├── favicon.ico             # Multi-size raster favicon (32x32)
+│   ├── apple-touch-icon.png    # High-resolution iOS touch icon
+│   └── images/
+│       ├── landing-washi.jpg   # Prologue Noren curtain paper texture
+│       └── scenes/             # 6 Chapter watercolor illustrations
+│           ├── 1.png           # Passage I: The Source
+│           ├── 2.png           # Passage II: The Horizon
+│           ├── 3.png           # Passage III: The Grove
+│           ├── 4.png           # Passage IV: The Watermill
+│           ├── 5.png           # Passage V: The Ascent
+│           └── 6.png           # Passage VI: Epilogue
+├── src/
+│   ├── app/
+│   │   ├── globals.css         # Parchment grain, scrollbar, and typography
+│   │   ├── layout.tsx          # Metadata (Dennou-Tabi), viewport, fonts
+│   │   ├── not-found.tsx       # Japanese 404 page
+│   │   └── page.tsx            # Main application orchestrator
+│   ├── components/
+│   │   ├── effects/
+│   │   │   ├── AtmosphericGlow.tsx   # Ambient river mist and sun glow
+│   │   │   ├── CustomCursor.tsx      # Liquid water-ripple cursor follower
+│   │   │   ├── FloatingLeaves.tsx    # Tumbling sakura petals
+│   │   │   ├── ParallaxArtwork.tsx   # Multiplane depth art container
+│   │   │   └── WaterDistortion.tsx   # SVG liquid surface turbulence
+│   │   ├── graphics/
+│   │   │   └── JapaneseMotifs.tsx    # Hanko seal, GitHub & LinkedIn vector marks
+│   │   ├── layout/
+│   │   │   ├── LandingPrologue.tsx   # 2.5s Washi Noren opening curtain
+│   │   │   └── Navigation.tsx        # Masthead, passage indicators & mobile menu
+│   │   ├── scenes/
+│   │   │   ├── ChapterContent.tsx    # 6 story passage reading views & project cards
+│   │   │   └── SceneManager.tsx      # Sticky stage, GSAP multiplane timelines & snapping
+│   │   └── ui/
+│   │       └── TactileCard.tsx       # 3D tilted parchment cards with light sheen
+│   ├── data/
+│   │   ├── chapters.ts         # Narrative passages and theme metadata
+│   │   └── portfolioData.ts    # Vedant's projects, bio, skills, and links
+│   ├── hooks/
+│   │   └── useLenis.ts         # Smooth momentum scroll hook
+│   └── lib/
+│       └── gsap.ts             # GSAP registration & animation constants
+├── next.config.mjs             # Next.js optimization configuration
+├── tailwind.config.ts          # Custom Japanese color scales & typography
+├── tsconfig.json               # TypeScript strict configuration
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js:** v18.17.0 or higher
+- **Package Manager:** `npm`, `pnpm`, or `yarn`
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vedha-333/dennou-tabi.git
+   cd dennou-tabi
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open **[http://localhost:3000](http://localhost:3000)** in your browser.
+
+4. **Run a production build:**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+---
+
+## ☁️ Deployment
+
+The codebase is fully optimized for continuous deployment on **Vercel**:
+
+1. Push your changes to GitHub.
+2. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
+3. Import `vedha-333/dennou-tabi`.
+4. Deploy with the default **Next.js** preset (no custom environment variables required).
+
+---
+
+## 👤 Author & Connect
+
+**Vedant Yadav Pandilwad**  
+*Computer Science Student &bull; AI & ML Developer &bull; Systems Craftsman*
+
+- **GitHub:** [@vedha-333](https://github.com/vedha-333)
+- **LinkedIn:** [vedant-pandilwad63724](https://www.linkedin.com/in/vedant-pandilwad63724/)
+- **Repository:** [vedha-333/dennou-tabi](https://github.com/vedha-333/dennou-tabi)
+
+---
+
+<div align="center">
+  <sub>一期一会 &bull; <i>Treasure every unrepeatable encounter.</i></sub>
+</div>

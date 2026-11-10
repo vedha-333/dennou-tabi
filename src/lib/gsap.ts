@@ -47,13 +47,6 @@ export const ANIMATION_CONFIG = {
     freqB: "0.025 0.012",
   },
   // Ambient particles
-  droplets: {
-    desktopCount: 24,
-    mobileCount: 10,
-    minDuration: 5,
-    maxDuration: 8,
-    maxDelay: 8,
-  },
   leaves: {
     desktopCount: 18,
     mobileCount: 8,
