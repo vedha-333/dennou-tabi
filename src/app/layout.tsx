@@ -2,10 +2,19 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vedant Yadav Pandilwad | Japanese Interactive Storytelling Portfolio",
-  description: "Computer Science Student | AI & ML Developer | Problem Solver — Exploring the intersection of backend systems, computer vision, and thoughtful digital experiences.",
+  title: "dennou-tabi",
+  description: "dennou-tabi (電脳の旅) — Vedant Yadav Pandilwad | Computer Science Student, AI & ML Developer, Systems Craftsman.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   authors: [{ name: "Vedant Yadav Pandilwad" }],
   keywords: [
+    "dennou-tabi",
+    "電脳の旅",
     "Vedant Yadav Pandilwad",
     "Portfolio",
     "Computer Science",
@@ -18,7 +27,7 @@ export const metadata: Metadata = {
     "Storytelling Portfolio",
   ],
   openGraph: {
-    title: "Vedant Yadav Pandilwad | Interactive Japanese Portfolio",
+    title: "dennou-tabi",
     description: "An interactive storytelling journey through software engineering, AI/ML, and computational craftsmanship.",
     type: "website",
     locale: "en_US",
