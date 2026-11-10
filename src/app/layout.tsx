@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "dennou-tabi",
-  description: "dennou-tabi (電脳の旅) — Vedant Yadav Pandilwad | Computer Science Student, AI & ML Developer, Systems Craftsman.",
+  title: "Dennou-Tabi",
+  description: "Dennou-Tabi (電脳の旅) — Vedant Yadav Pandilwad | Computer Science Student, AI & ML Developer, Systems Craftsman.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -13,8 +13,9 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Vedant Yadav Pandilwad" }],
   keywords: [
-    "dennou-tabi",
+    "Dennou-Tabi",
     "電脳の旅",
+    "dennou-tabi",
     "Vedant Yadav Pandilwad",
     "Portfolio",
     "Computer Science",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     "Storytelling Portfolio",
   ],
   openGraph: {
-    title: "dennou-tabi",
+    title: "Dennou-Tabi",
     description: "An interactive storytelling journey through software engineering, AI/ML, and computational craftsmanship.",
     type: "website",
     locale: "en_US",
