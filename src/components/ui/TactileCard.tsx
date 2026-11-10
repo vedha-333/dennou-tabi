@@ -27,6 +27,7 @@ export default function TactileCard({
   const [lightPos, setLightPos] = useState({ x: 50, y: 50 });
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === "touch") return; // Touch screens keep surface flat for steady reading
     const card = cardRef.current;
     if (!card) return;
 
@@ -49,7 +50,8 @@ export default function TactileCard({
     });
   };
 
-  const handlePointerEnter = () => {
+  const handlePointerEnter = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === "touch") return;
     setIsHovered(true);
   };
 
@@ -102,7 +104,7 @@ export default function TactileCard({
         />
 
         {/* Card Content with 3D elevation */}
-        <div className="relative z-10 p-7 sm:p-10 md:p-12">
+        <div className="relative z-10 p-5 sm:p-8 md:p-12">
           {children}
         </div>
       </div>

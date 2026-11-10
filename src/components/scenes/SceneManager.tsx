@@ -394,9 +394,9 @@ export default function SceneManager({ onChapterChange }: SceneManagerProps) {
                   isHero
                     ? "justify-center"
                     : isEvenPage
-                    ? "justify-end"
-                    : "justify-start"
-                } px-6 sm:px-12 md:px-16 lg:px-24 pt-20 md:pt-28 pb-10 md:pb-14 pointer-events-none`}
+                    ? "justify-center lg:justify-end"
+                    : "justify-center lg:justify-start"
+                } px-4 sm:px-10 md:px-16 lg:px-24 pt-16 sm:pt-20 md:pt-28 pb-8 sm:pb-10 md:pb-14 pointer-events-none`}
               >
                 <div
                   ref={(el) => {
@@ -404,11 +404,11 @@ export default function SceneManager({ onChapterChange }: SceneManagerProps) {
                   }}
                   className={`chapter-content-box w-full ${
                     isHero ? "max-w-3xl" : "max-w-2xl"
-                  } pointer-events-auto will-change-[transform,opacity]`}
+                  } pointer-events-auto will-change-[transform,opacity] max-h-[85vh] sm:max-h-[88vh] md:max-h-none overflow-y-auto md:overflow-visible overscroll-contain pr-1 sm:pr-0 custom-scrollbar`}
                 >
                   {isHero ? (
                     /* HERO SECTION: Editorial Intro */
-                    <div className="w-full translate-y-4 sm:translate-y-8">
+                    <div className="w-full translate-y-2 sm:translate-y-4 md:translate-y-8">
                       <TactileCard accentColor="#B84C3D">
                         <ChapterContent
                           chapter={chap}

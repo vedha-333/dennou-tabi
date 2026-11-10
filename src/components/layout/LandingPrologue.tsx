@@ -199,25 +199,25 @@ export default function LandingPrologue({ onComplete }: LandingPrologueProps) {
         </div>
 
         {/* 2. Main Title: Vedant Yadav Pandilwad */}
-        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-bold text-ink-900 tracking-[0.24em] uppercase mb-3">
+        <h1 className="font-serif text-xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-bold text-ink-900 tracking-[0.18em] sm:tracking-[0.24em] uppercase mb-2.5 sm:mb-3 px-2">
           VEDANT YADAV PANDILWAD
         </h1>
 
         {/* 3. Delicate Vermilion Hairline Divider */}
-        <div className="w-24 sm:w-32 h-[1px] bg-gradient-to-r from-transparent via-vermilion-500/70 to-transparent mb-3.5" />
+        <div className="w-20 sm:w-32 h-[1px] bg-gradient-to-r from-transparent via-vermilion-500/70 to-transparent mb-3 sm:mb-3.5" />
 
         {/* 4. Japanese Kanji: Journey of the Mind */}
-        <p className="font-jp text-xs sm:text-sm text-vermilion-500 font-bold tracking-[0.32em] mb-3">
+        <p className="font-jp text-xs sm:text-sm text-vermilion-500 font-bold tracking-[0.28em] sm:tracking-[0.32em] mb-2.5 sm:mb-3">
           電 脳 の 旅
         </p>
 
         {/* 5. Subtitle: Roles */}
-        <p className="font-sans text-[10px] sm:text-[11px] md:text-xs text-ink-700/90 uppercase tracking-[0.24em] font-medium max-w-md leading-relaxed mb-8">
+        <p className="font-sans text-[10px] sm:text-[11px] md:text-xs text-ink-700/90 uppercase tracking-[0.18em] sm:tracking-[0.24em] font-medium max-w-xs sm:max-w-md leading-relaxed mb-6 sm:mb-8 px-2">
           Computer Science Student &bull; AI & ML Developer &bull; Systems Craftsman
         </p>
 
         {/* 6. Hairline Progress Bar & Counter */}
-        <div className="flex flex-col items-center gap-2 w-48 sm:w-60">
+        <div className="flex flex-col items-center gap-2 w-44 sm:w-60">
           <div className="w-full h-[1.5px] bg-ink-900/15 rounded-full overflow-hidden">
             <div
               className="h-full bg-vermilion-500 transition-all duration-75 ease-linear"

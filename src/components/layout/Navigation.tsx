@@ -91,20 +91,20 @@ export default function Navigation({ activeChapterIndex, onNavigateToChapter }: 
         style={{ width: `${scrollProgress}%` }}
       />
 
-      <header className="fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-12 transition-all duration-300">
+      <header className="fixed top-0 left-0 right-0 z-50 py-4 sm:py-5 px-4 sm:px-6 md:px-12 transition-all duration-300">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Top Left: Brand and Japanese Chapter Subtitle (Matching Inkbound) */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5 sm:gap-3">
             <button
               onClick={() => onNavigateToChapter(0)}
               onMouseEnter={triggerRipple}
               onMouseLeave={triggerRipple}
-              className="group flex items-center gap-2.5 text-left focus:outline-none"
+              className="group flex items-center gap-2 sm:gap-2.5 text-left focus:outline-none"
             >
               <span className="font-serif text-sm md:text-base font-bold tracking-[0.2em] uppercase text-ink-900 group-hover:text-vermilion-500 transition-colors">
                 VEDANT
               </span>
-              <span className="font-jp text-[11px] text-vermilion-500 font-semibold tracking-wider bg-vermilion-500/10 px-1.5 py-0.5 rounded border border-vermilion-500/20">
+              <span className="font-jp text-[10px] sm:text-[11px] text-vermilion-500 font-semibold tracking-wider bg-vermilion-500/10 px-1.5 py-0.5 rounded border border-vermilion-500/20">
                 電脳の旅
               </span>
             </button>
@@ -113,7 +113,7 @@ export default function Navigation({ activeChapterIndex, onNavigateToChapter }: 
           {/* Top Center: Minimalist Circular Chapter Indicators (Matching Inkbound: · · ( ) · · ·) */}
           <nav
             aria-label="Story Passages"
-            className="flex items-center gap-3.5 select-none"
+            className="hidden sm:flex items-center gap-2 md:gap-3.5 select-none"
           >
             {CHAPTERS.map((chap, idx) => {
               const isActive = activeChapterIndex === idx;
