@@ -156,13 +156,13 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
           </div>
 
           {/* Editorial Headline matching Passage II typography exactly */}
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-5">
-            The code wakes <br />
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4 sm:mb-5">
+            The code wakes <br className="hidden sm:inline" />
             before the mountain.
           </h1>
 
           {/* Subtitle / Bio matching Passage II typography */}
-          <p className="font-body italic text-base sm:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-6 border-l-2 border-vermilion-500/35 pl-4 py-0.5">
+          <p className="font-body italic text-sm sm:text-base md:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6 border-l-2 border-vermilion-500/35 pl-3.5 sm:pl-4 py-0.5">
             &ldquo;{OWNER_INFO.bio}&rdquo;
           </p>
 
@@ -215,21 +215,21 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-6">
-            Beyond the horizon, <br />
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4 sm:mb-6">
+            Beyond the horizon, <br className="hidden sm:inline" />
             systems breathe.
           </h2>
 
-          <p className="font-body italic text-base sm:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-6">
+          <p className="font-body italic text-sm sm:text-base md:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6">
             An ivory koi follows a vermilion mark upstream &mdash; exploring how technology can bridge first-principles computer science, scalable backends, and meaningful user craft.
           </p>
 
           {/* Floating translucent interests cards */}
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 max-w-2xl">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 mb-6 sm:mb-8 max-w-2xl">
             {OWNER_INFO.interests.map((interest, idx) => (
               <div
                 key={idx}
-                className="wash-panel-subtle px-4 py-3 rounded-xl border border-ink-500/15 flex items-center gap-2.5"
+                className="wash-panel-subtle px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-ink-500/15 flex items-center gap-2.5"
                 onMouseEnter={(event) => {
                   gsap.to(event.currentTarget, {
                     y: -4,
@@ -256,9 +256,9 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
           </div>
 
           {/* Seal + CTA */}
-          <div className="flex items-center justify-between w-full max-w-2xl">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 w-full max-w-2xl">
             <div className="flex items-center gap-3">
-              <div className="hanko-seal w-8 h-8 border border-amber-600/70 bg-amber-600/10 text-amber-700 flex items-center justify-center font-jp text-xs font-bold select-none">
+              <div className="hanko-seal w-8 h-8 border border-amber-600/70 bg-amber-600/10 text-amber-700 flex items-center justify-center font-jp text-xs font-bold select-none shrink-0">
                 志
               </div>
               <span className="font-serif italic text-xs text-ink-600">
@@ -268,7 +268,7 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
 
             <button
               onClick={() => onNavigateToChapter(2)}
-              className="group flex items-center gap-2 text-[11px] font-sans uppercase tracking-[0.25em] text-ink-700 hover:text-vermilion-500 transition-colors"
+              className="group flex items-center gap-2 text-[11px] font-sans uppercase tracking-[0.25em] text-ink-700 hover:text-vermilion-500 transition-colors shrink-0"
             >
               <span className="border-b border-ink-500/40 group-hover:border-vermilion-500 pb-0.5">
                 NEXT PASSAGE
@@ -299,12 +299,12 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
-            The bamboo gate <br />
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
+            The bamboo gate <br className="hidden sm:inline" />
             remembers every craft.
           </h2>
 
-          <p className="font-body italic text-base sm:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-6">
+          <p className="font-body italic text-sm sm:text-base md:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6">
             Stone lanterns count each ripple. Technical competencies organized across languages, frontend craft, backend architecture, databases, and computer vision.
           </p>
 
@@ -388,17 +388,17 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
-            Every bridge connects <br />
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
+            Every bridge connects <br className="hidden sm:inline" />
             thought to reality.
           </h2>
 
-          <p className="font-body italic text-base sm:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-6">
+          <p className="font-body italic text-sm sm:text-base md:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6">
             Beyond the pond, the water turns the wheel. Verified software applications solving tangible problems in voice AI, touchless vision, and network algorithms.
           </p>
 
           {/* Filter Pills */}
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center gap-2 mb-5 sm:mb-6">
             <button
               onClick={() => setActiveProjectTab("featured")}
               className={`px-3 py-1 rounded-full text-xs font-sans tracking-wide transition-all ${
@@ -422,11 +422,11 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
           </div>
 
           {/* Airy translucent project cards */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 mb-6 sm:mb-8 max-w-4xl">
             {PROJECTS.filter((p) => (activeProjectTab === "featured" ? p.featured : true)).map((proj) => (
               <div
                 key={proj.id}
-                className="wash-panel rounded-2xl p-5 flex flex-col justify-between hover:border-vermilion-500/40 hover:shadow-lg transition-all duration-300 group"
+                className="wash-panel rounded-2xl p-4 sm:p-5 flex flex-col justify-between hover:border-vermilion-500/40 hover:shadow-lg transition-all duration-300 group"
                 onMouseEnter={(event) => {
                   gsap.to(event.currentTarget, {
                     y: -6,
@@ -460,13 +460,13 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
                     </a>
                   </div>
 
-                  <h3 className="font-serif text-xl font-bold text-ink-900 group-hover:text-vermilion-500 transition-colors">
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-ink-900 group-hover:text-vermilion-500 transition-colors">
                     {proj.title}
                   </h3>
-                  <p className="text-[11px] font-sans text-amber-700 font-medium mb-2">
+                  <p className="text-[11px] font-sans text-amber-700 font-medium mb-1.5 sm:mb-2">
                     {proj.subtitle}
                   </p>
-                  <p className="font-body text-xs text-ink-800 leading-relaxed mb-4">
+                  <p className="font-body text-xs text-ink-800 leading-relaxed mb-4 line-clamp-3 sm:line-clamp-none">
                     {proj.description}
                   </p>
                 </div>
@@ -534,19 +534,19 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
-            Mastery is a river <br />
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
+            Mastery is a river <br className="hidden sm:inline" />
             that never rests.
           </h2>
 
-          <p className="font-body italic text-base sm:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-6">
+          <p className="font-body italic text-sm sm:text-base md:text-lg text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6">
             The path ascends through winding stone stairs and mountain mist. Four foundational values that guide every system, interface, and algorithm.
           </p>
 
           {/* 4 Pillars in clean translucent cards */}
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 max-w-2xl">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 sm:mb-8 max-w-2xl">
             {PHILOSOPHY_PILLARS.map((pillar, idx) => (
-              <div key={idx} className="wash-panel rounded-xl p-4 border border-ink-500/15">
+              <div key={idx} className="wash-panel rounded-xl p-3.5 sm:p-4 border border-ink-500/15">
                 <div className="flex items-center justify-between mb-1.5">
                   <span className="font-serif text-base font-bold text-ink-900">
                     {pillar.title}
@@ -600,17 +600,17 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
-            Every river is <br />
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 tracking-tight leading-[1.06] mb-4">
+            Every river is <br className="hidden sm:inline" />
             a way home.
           </h2>
 
-          <p className="font-body italic text-base sm:text-lg md:text-xl text-ink-800/90 max-w-2xl leading-relaxed mb-6">
+          <p className="font-body italic text-sm sm:text-base md:text-lg lg:text-xl text-ink-800/90 max-w-2xl leading-relaxed mb-5 sm:mb-6">
             The water closes without a seam, but somewhere downstream a red moon trembles again. Thank you for walking through this illustrated watercolor story.
           </p>
 
           {/* Minimalist Contact Card */}
-          <div className="wash-panel rounded-2xl p-6 w-full max-w-2xl mb-8">
+          <div className="wash-panel rounded-2xl p-5 sm:p-6 w-full max-w-2xl mb-6 sm:mb-8">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-ink-500/15">
               <div className="flex items-center gap-3">
                 <HankoSeal className="w-10 h-10 shadow-sm" />
@@ -624,7 +624,7 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2.5 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
                 <a
                   href={OWNER_INFO.github}
                   target="_blank"
@@ -647,7 +647,7 @@ export default function ChapterContent({ chapter, onNavigateToChapter }: Chapter
               </div>
             </div>
 
-            <div className="pt-4 flex items-center justify-between text-xs font-sans text-ink-600">
+            <div className="pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-0 text-xs font-sans text-ink-600">
               <span className="italic font-serif">一期一会 &bull; Treasure every unrepeatable encounter.</span>
               <span className="text-vermilion-500 font-semibold text-[11px] tracking-wider uppercase">
                 Open for Collaboration
