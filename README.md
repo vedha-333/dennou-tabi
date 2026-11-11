@@ -3,6 +3,7 @@
 # 電 脳 の 旅 &bull; Dennou-Tabi
 ### *An Interactive Japanese Watercolor Storytelling Portfolio*
 
+[![Live Demo](https://img.shields.io/badge/Live_Site-dennou--tabi.vercel.app-B84C3D?style=for-the-badge&logo=vercel&logoColor=white)](https://dennou-tabi.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -10,6 +11,8 @@
 [![Lenis](https://img.shields.io/badge/Lenis-Smooth_Scroll-orange?style=for-the-badge)](https://lenis.darkroom.engineering/)
 
 <br />
+
+### 🌐 [Visit Live: dennou-tabi.vercel.app](https://dennou-tabi.vercel.app)
 
 > *「千里の行も足下に始まる」*  
 > *"A journey of a thousand miles begins with a single step."*
@@ -176,12 +179,11 @@ dennou-tabi/
 
 ## ☁️ Deployment
 
-The codebase is fully optimized for continuous deployment on **Vercel**:
+The portfolio is deployed and hosted on **Vercel**:
 
-1. Push your changes to GitHub.
-2. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
-3. Import `vedha-333/dennou-tabi`.
-4. Deploy with the default **Next.js** preset (no custom environment variables required).
+- **Live URL:** [https://dennou-tabi.vercel.app](https://dennou-tabi.vercel.app)
+- **Deployment Platform:** [Vercel Edge Network](https://vercel.com/)
+- **CI/CD:** Automatic continuous deployment on push to `main`.
 
 ---
 
@@ -190,6 +192,7 @@ The codebase is fully optimized for continuous deployment on **Vercel**:
 **Vedant Yadav Pandilwad**  
 *Computer Science Student &bull; AI & ML Developer &bull; Systems Craftsman*
 
+- **Live Site:** [dennou-tabi.vercel.app](https://dennou-tabi.vercel.app)
 - **GitHub:** [@vedha-333](https://github.com/vedha-333)
 - **LinkedIn:** [vedant-pandilwad63724](https://www.linkedin.com/in/vedant-pandilwad63724/)
 - **Repository:** [vedha-333/dennou-tabi](https://github.com/vedha-333/dennou-tabi)
